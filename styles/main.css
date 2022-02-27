@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+:root {
+	--fondo: white;
+	--primario: #e84393;
+	/* --secundario: ; */
+}
+
+.container {
+	max-width: 120rem;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	background-color: var(--fondo);
+}
+
+.logo {
+	height: 10rem;
+}
+
+.menu {
+	gap: 2rem;
+}
+
+.menu a:hover {
+	color: var(--primario);
+}
+
+.footer {
+	color: white;
+	text-align: center;
+	background-color: black;
+}
+
+.footer__menu {
+	padding: 5rem 0rem 3rem 0rem;
+}
+
+.footer__menu a {
+	color: white;
+	margin: 0rem 2rem;
+}
+
+.footer__menu a:hover {
+	color: var(--primario);
+}
+
+.footer__social p {
+	font-weight: bold;
+	padding-bottom: 1.5rem;
+}
+
+.footer__social svg {
+	height: 3rem;
+	margin-bottom: 3.5rem;
+}
