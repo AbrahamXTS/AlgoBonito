@@ -1,4 +1,7 @@
-<?php 
+<?php require("./layout/header.php"); ?>
 
-require("./layout/header.php");
-require("./layout/footer.php");
+    <header class="header">
+        
+    </header>
+
+<?php require("./layout/footer.php"); ?>

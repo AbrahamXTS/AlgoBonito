@@ -1,0 +1,13 @@
+{
+    "name": "abrah/algo-bonito",
+    "description": "Tienda online de ropa",
+    "authors": [
+        {
+            "name": "Abraham Espinosa",
+            "email": "abrahamespinosa3132@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
