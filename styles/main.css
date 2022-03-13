@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Satisfy&display=swap');
 
 :root {
 	--fondo: white;
@@ -6,17 +6,21 @@
 }
 
 .container {
-	max-width: 120rem;
+	margin: 0 auto;
+	max-width: 105rem;
 }
 
 .flex {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+}
+
+.grid {
+	display: grid;
 }
 
 a {
-	color: black;
+	color: inherit;
 	text-decoration: none;
 }
 
@@ -29,6 +33,11 @@ body {
 	height: 10rem;
 }
 
+.nav {
+	justify-content: space-around;
+
+}
+
 .menu {
 	gap: 2rem;
 }
@@ -39,6 +48,7 @@ body {
 
 .footer {
 	color: white;
+	margin-top: 5rem;
 	text-align: center;
 	background-color: black;
 }
@@ -64,4 +74,57 @@ body {
 .footer__social svg {
 	height: 3rem;
 	margin-bottom: 3.5rem;
+}
+
+.header {
+	height: 40rem;
+	background-image: linear-gradient(rgba(35, 35, 35, 0.4), rgba(35, 35, 35, 0.4)), url(../images/header.webp);
+}
+
+.header .flex {
+	padding-top: 5rem;
+	flex-direction: column;
+}
+
+.branding {
+	height: 20rem;
+}
+
+.branding-text {
+	color: var(--fondo);
+	padding-bottom: 0.5rem;
+	font-family: 'Satisfy', cursive;
+	border-bottom: 0.5rem solid var(--primario);
+}
+
+.ofertas {
+	gap: 1rem;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.subtitulo {
+	font-size: 3rem;
+	margin-top: 4rem;
+	text-align: center;
+}
+
+.producto {
+	height: 25rem;
+}
+
+.informacion {
+	text-align: center;
+}
+
+.informacion h3 {
+	margin: 0rem;
+}
+
+.informacion p {
+	margin-top: 1.5rem;
+}
+
+.banner {
+	width: 100%;
+	margin: 3rem auto;
 }
