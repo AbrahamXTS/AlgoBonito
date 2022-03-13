@@ -2,7 +2,7 @@
 
     <header class="header">
         <div class="flex container">
-            <img class="branding" src="./images/logo.png"><img>
+            <img class="branding" src="./images/logo.png" alt="Frontend Store"/>
             <h1 class="branding-text">Donde siempre encontrarás algo bonito</h1>
         </div>
     </header>

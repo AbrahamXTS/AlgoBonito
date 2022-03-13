@@ -12,7 +12,7 @@
 
 <body>
     <nav class="flex nav">
-        <img src="./images/logo.png" class="logo" alt="Frontend Store">
+        <img src="./images/logo.png" class="logo" alt="Frontend Store" />
         <div class="flex menu">
             <a href="/">Inicio</a>
             <a href="./niñas.php">Niñas</a>
