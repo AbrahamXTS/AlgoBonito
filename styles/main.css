@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Satisfy&display=swap");
 
 :root {
 	--fondo: white;
@@ -6,6 +6,7 @@
 }
 
 .container {
+	width: 95%;
 	margin: 0 auto;
 	max-width: 105rem;
 }
@@ -35,12 +36,33 @@ body {
 }
 
 .nav {
-	justify-content: space-around;
-
+	justify-content: space-between;
 }
 
 .menu {
 	gap: 2rem;
+	display: none;
+}
+
+.icono-menu {
+	width: 3rem;
+	border: none;
+	margin-right: 2rem;
+	background-color: transparent;
+}
+
+@media (min-width: 468px) {
+	.nav {
+		justify-content: space-around;
+	}
+
+	.menu {
+		display: flex;
+	}
+
+	.icono-menu {
+		display: none;
+	}
 }
 
 .menu a:hover {
@@ -79,7 +101,11 @@ body {
 
 .header {
 	height: 40rem;
-	background-image: linear-gradient(rgba(35, 35, 35, 0.4), rgba(35, 35, 35, 0.4)), url(../images/header.webp);
+	background-image: linear-gradient(
+			rgba(35, 35, 35, 0.4),
+			rgba(35, 35, 35, 0.4)
+		),
+		url(../images/header.webp);
 }
 
 .header .flex {
@@ -88,20 +114,39 @@ body {
 }
 
 .branding {
-	width: auto;
-	height: 20rem;
+	width: 100%;
+}
+
+@media (min-width: 468px) {
+	.branding {
+		width: auto;
+		height: 20rem;
+	}
 }
 
 .branding-text {
+	text-align: center;
 	color: var(--fondo);
 	padding-bottom: 0.5rem;
-	font-family: 'Satisfy', cursive;
+	font-family: "Satisfy", cursive;
 	border-bottom: 0.5rem solid var(--primario);
 }
 
 .ofertas {
-	gap: 1rem;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 280px) {
+	.ofertas {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media (min-width: 468px) {
+	.ofertas {
+		gap: 1rem;
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 .subtitulo {
@@ -111,7 +156,13 @@ body {
 }
 
 .producto {
-	height: 25rem;
+	width: 100%;
+}
+
+@media (min-width: 468px) {
+	.producto {
+		height: 25rem;
+	}
 }
 
 .informacion {
